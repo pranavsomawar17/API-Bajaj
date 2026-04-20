@@ -1,10 +1,26 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Maven target folder (ignore everything)
+target/*
 
-### STS ###
+# ✅ BUT allow the final JAR file (IMPORTANT)
+!target/demo-0.0.1-SNAPSHOT.jar
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE - IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# IDE - Eclipse / STS
 .apt_generated
 .classpath
 .factorypath
@@ -13,13 +29,7 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
+# IDE - NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -29,5 +39,12 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# Node (if ever used)
+node_modules/
+
+# Temporary files
+*.tmp
+*.swp
